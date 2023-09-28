@@ -1,4 +1,4 @@
-![Test Image](![Alt text](clone-spotify.jpg))
+![Alt text](clone-spotify.jpg)
 
 # React + TypeScript + Vite
 
