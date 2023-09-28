@@ -1,0 +1,80 @@
+footer {
+    grid-area: now-playing-bar;
+    z-index: 5;
+
+}
+
+
+/* Stili generali per lo slider */
+input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    /* Rimuovi l'aspetto predefinito di Webkit */
+
+    /* Larghezza dello slider */
+    height: 5px;
+    /* Altezza dello slider */
+    background: #a7a7a7;
+    /* Colore di sfondo */
+    border: none;
+    /* Rimuovi il bordo */
+    border-radius: 5px;
+    /* Bordo arrotondato */
+    outline: none;
+    /* Rimuovi l'outline al focus */
+}
+
+/* Stili per il thumb (pallino) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Rimuovi l'aspetto predefinito di Webkit */
+    width: 0;
+    /* Larghezza del thumb */
+    height: 0;
+    /* Altezza del thumb */
+    background: #ffffff;
+    /* Colore del thumb */
+    border: none;
+    /* Rimuovi il bordo */
+    border-radius: 50%;
+    /* Bordo arrotondato */
+    margin-top: 0px;
+    /* Posiziona correttamente il thumb */
+    transition: all 150ms linear;
+    /* Effettua la transizione */
+
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Rimuovi l'aspetto predefinito di Webkit */
+    width: 20px;
+    /* Larghezza del thumb */
+    height: 20px;
+    /* Altezza del thumb */
+    background: #ffffff;
+    /* Colore del thumb */
+    border: none;
+    /* Rimuovi il bordo */
+    border-radius: 50%;
+    /* Bordo arrotondato */
+    margin-top: -7px;
+    /* Posiziona correttamente il thumb */
+}
+
+/* Stili per il track (barra) */
+input[type="range"]::-webkit-slider-runnable-track {
+
+    /* Larghezza della barra */
+    height: 5px;
+    /* Altezza della barra */
+    background: #a7a7a7;
+    /* Colore del track */
+    border-radius: 5px;
+    /* Bordo arrotondato */
+}
+
+/* Rimuovi lo stile di Firefox */
+input[type="range"]::-moz-focus-outer {
+    border: 0;
+}

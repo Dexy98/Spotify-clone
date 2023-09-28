@@ -1,0 +1,20 @@
+.main {
+  --main-view-top-bar-grid-area-z-index: 2;
+  --left-sidebar-grid-area-z-index: 4;
+  --above-everything-except-now-playing-bar-z-index: 5;
+  --above-main-and-now-playing-view-grid-area: 6;
+  --now-playing-bar-grid-area-z-index: calc(var(--above-everything-except-now-playing-bar-z-index) + 1);
+  background-color: #000;
+  display: grid;
+  gap: var(--panel-gap);
+  grid-template-areas:
+    "left-sidebar main-view right-sidebar"
+    "now-playing-bar now-playing-bar now-playing-bar";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  height: 100dvh;
+  min-height: 100dvh;
+  padding: var(--panel-gap);
+  position: relative;
+  width: 100%;
+}
